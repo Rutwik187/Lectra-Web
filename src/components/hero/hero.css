@@ -11,6 +11,13 @@
   gap: 2rem;
 }
 
+.hero-right {
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--orange);
+}
+
 .hero-tag_line {
   margin-top: 4rem;
   color: white;
@@ -54,7 +61,7 @@
   font-size: 1rem;
   font-weight: 200;
   letter-spacing: 1px;
-  width: 80%;
+  width: 70%;
   text-transform: none;
   line-height: 150%;
 }
@@ -86,4 +93,80 @@
 .hero-buttons > :nth-child(2) {
   background-color: transparent;
   border: 2px solid var(--orange);
+}
+
+.hero-right > .btn {
+  color: black;
+  position: absolute;
+  right: 3rem;
+  top: 2rem;
+}
+
+.fast-recovery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--darkGrey);
+  width: fit-content;
+  padding: 1rem;
+  align-items: start;
+  border-radius: 5px;
+  position: absolute;
+  top: 7rem;
+  right: 4rem;
+}
+
+.fast-recovery img {
+  width: 2rem;
+}
+
+.fast-recovery > :nth-child(3) {
+  color: var(--gray);
+}
+.fast-recovery > :nth-child(2) {
+  color: white;
+  font-size: 1.5rem;
+}
+.hero-img {
+  position: absolute;
+  top: 10rem;
+  right: 8rem;
+  width: 23rem;
+}
+.hero-img-back {
+  position: absolute;
+  top: 4rem;
+  right: 20rem;
+  z-index: -1;
+  width: 15rem;
+}
+.bars {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--caloryCard);
+  border-radius: 5px;
+  padding: 1rem;
+  width: fit-content;
+  position: absolute;
+  right: 28rem;
+  top: 32rem;
+}
+.bars img {
+  width: 3rem;
+}
+
+.bars > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bars > div > :nth-child(1),
+.bars > div > :nth-child(3) {
+  color: var(--gray);
+}
+
+.bars > div > :nth-child(2) {
+  color: white;
+  font-size: 1.5rem;
 }
