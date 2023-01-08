@@ -1,0 +1,70 @@
+.our-team {
+  display: flex;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.left-team {
+  display: flex;
+  flex: 1 1;
+  gap: 2rem;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: white;
+}
+.our-team-header > :nth-child(1),
+.our-team-header > :nth-child(2),
+.our-team-header > :nth-child(3) {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.left-team > :nth-child(2) {
+  text-transform: none;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+
+.right-team {
+  flex: 1;
+  position: relative;
+}
+
+.right-team > :nth-child(1) {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  border: 2px solid orange;
+  background: transparent;
+  right: 9rem;
+  top: 0.9rem;
+}
+.right-team > :nth-child(2) {
+  position: absolute;
+  width: 17rem;
+  height: 19rem;
+  right: 7rem;
+  top: 4rem;
+  background: var(--planCard);
+}
+
+.right-team > img {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+  right: 8rem;
+  top: 2rem;
+}
+
+.arrows {
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 3rem;
+}
+.arrows img {
+  width: 1.5rem;
+  cursor: pointer;
+}
