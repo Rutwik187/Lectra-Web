@@ -2,13 +2,13 @@ import image1 from "../assets/t-image1.png";
 import image2 from "../assets/t-image2.jpg";
 import image3 from "../assets/t-image3.jpg";
 
-export const testimonialsData = [
+export const teamData = [
   {
     image: image1,
     review:
-      "I made the right choice by choosing the Fitclub and by choosing the right plan and program I already achieved my ideal body!",
+      "Jake Founded Lectra After suffering muscular injuries as a high school and collegiate athlete. He's devoted himself to Lectra, winning the WCU-BIZ Idea competition of 335 technology companies, participated in the Collegiate Entrepreneurs Organization.",
     name: 'MATHEW HENDRICKSON',
-    status : 'ENTREPRENEUR'
+    status: 'ENTREPRENEUR'
   },
   {
     image: image2,
@@ -17,8 +17,8 @@ export const testimonialsData = [
     status: 'COACH'
   },
   {
-    image : image3,
-    review:' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
+    image: image3,
+    review: ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aspernatur quod voluptatem',
     name: 'FRANKLIN',
     status: "CUSTOMER"
   }
