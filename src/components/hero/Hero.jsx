@@ -5,15 +5,23 @@ import hero_img from "../../assets/hero_image.png";
 import hero_img_back from "../../assets/hero_image_back.png";
 import heart from "../../assets/heart.png";
 import bars from "../../assets/calories.png";
+import { motion } from "framer-motion";
 
 const Hero = () => {
+  const transition = { type: "spring", duration: 3 };
   return (
     <div className="hero">
       <div className="blur hero-blur"></div>
       <div className="hero-left">
         <Header />
         <div className="hero-tag_line">
-          <div className="hero-tag_line-div"></div>
+          <motion.div
+            className="hero-tag_line-div"
+            initial={{ left: "238px" }}
+            whileInView={{ left: "8px" }}
+            transition={{ ...transition, type: "tween" }}
+          ></motion.div>
+
           <span className="hero-tag_line-span">
             the best fitness friend in the town{" "}
           </span>
@@ -61,28 +69,41 @@ const Hero = () => {
       {/* Right Part */}
       <div className="hero-right">
         <button className="btn">Join Now</button>
-        <div className="fast-recovery">
+        <motion.div
+          initial={{ right: "-1rem" }}
+          whileInView={{ right: "4rem" }}
+          transition={transition}
+          className="fast-recovery"
+        >
           <img src={heart} alt="heart" />
           <span>50%</span>
           <span>Fast Recovery</span>
-        </div>
+        </motion.div>
 
         {/* hero images */}
 
         <img src={hero_img} alt="hero images" className="hero-img" />
-        <img
+        <motion.img
+          initial={{ right: "11rem" }}
+          whileInView={{ right: "20rem" }}
+          transition={transition}
           src={hero_img_back}
           alt="hero-img-back"
           className="hero-img-back"
         />
-        <div className="bars">
+        <motion.div
+          initial={{ right: "37rem" }}
+          whileInView={{ right: "28rem" }}
+          transition={transition}
+          className="bars"
+        >
           <img src={bars} alt="" />
           <div>
             <span>Advance</span>
             <span>Shock</span>
             <span>Treatment</span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
