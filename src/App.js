@@ -1,5 +1,6 @@
 import './App.css';
 import Hero from './components/hero/Hero';
+import Join from './components/join/Join';
 import OurTeam from './components/our-team/OurTeam';
 import Plans from './components/plans/Plans';
 import Programs from './components/programs/Programs';
@@ -11,7 +12,9 @@ function App() {
       <Programs />
       <Reasons />
       <Plans />
-      {/* <OurTeam /> */}
+      <OurTeam />
+      <Join />
+
     </div>
   );
 }
