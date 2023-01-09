@@ -9,6 +9,7 @@ import bars from "../../assets/calories.png";
 const Hero = () => {
   return (
     <div className="hero">
+      <div className="blur hero-blur"></div>
       <div className="hero-left">
         <Header />
         <div className="hero-tag_line">
