@@ -7,7 +7,7 @@ import video from "../../assets/video.png";
 
 const Reasons = () => {
   return (
-    <div className="Reasons" id="reasons">
+    <div className="Reasons" id="WhyUs">
       <div className="Reasons-left">
         <img src={video} alt="video" />
       </div>

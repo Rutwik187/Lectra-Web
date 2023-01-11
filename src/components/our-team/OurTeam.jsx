@@ -11,7 +11,7 @@ const OurTeam = () => {
   const [selected, setSelected] = useState(0);
   const tLength = teamData.length;
   return (
-    <div className="our-team">
+    <div className="our-team" id="OurTeam">
       <div className="left-team">
         <div className="our-team-header">
           <span>Our </span>
