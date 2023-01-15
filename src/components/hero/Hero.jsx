@@ -7,6 +7,8 @@ import heart from "../../assets/heart.png";
 import bars from "../../assets/calories.png";
 import { motion } from "framer-motion";
 
+import NumberCounter from "number-counter";
+
 const Hero = () => {
   const transition = { type: "spring", duration: 3 };
   const mobile = window.innerWidth <= 768 ? true : false;
@@ -49,15 +51,21 @@ const Hero = () => {
         </div>
         <div className="hero-figures">
           <div>
-            <span>140+</span>
+            <span>
+              <NumberCounter end={140} start={100} delay={4} postFix="+" />
+            </span>
             <span>stores</span>
           </div>
           <div>
-            <span>+1000</span>
+            <span>
+              <NumberCounter end={1000} start={950} delay={4} postFix="+" />
+            </span>
             <span>Pre-orders</span>
           </div>
           <div>
-            <span>50+</span>
+            <span>
+              <NumberCounter end={50} start={10} delay={4} postFix="+" />
+            </span>
             <span>products</span>
           </div>
         </div>
