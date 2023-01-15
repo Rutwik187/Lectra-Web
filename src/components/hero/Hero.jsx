@@ -6,10 +6,13 @@ import hero_img_back from "../../assets/hero_image_back.png";
 import heart from "../../assets/heart.png";
 import bars from "../../assets/calories.png";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
+import { useState } from "react";
 
 import NumberCounter from "number-counter";
 
 const Hero = () => {
+  const [menuOpened, SetMenuOpened] = useState(false);
   const transition = { type: "spring", duration: 3 };
   const mobile = window.innerWidth <= 768 ? true : false;
   return (
@@ -70,8 +73,20 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-buttons">
-          <button className="btn ">Buy Now</button>
-          <button className="btn">Learn More</button>
+          <button className="btn ">
+            <Link onClick={() => SetMenuOpened(false)} to="Plans" smooth={true}>
+              Buy Now
+            </Link>
+          </button>
+          <button className="btn">
+            <Link
+              onClick={() => SetMenuOpened(false)}
+              to="Mechanisms"
+              smooth={true}
+            >
+              Know More
+            </Link>
+          </button>
         </div>
       </div>
 
