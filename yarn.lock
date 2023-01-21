@@ -8003,7 +8003,7 @@ postcss-js@^4.0.0:
     camelcase-css "^2.0.1"
 
 postcss-lab-function@^4.2.0:
-  version "4.2.0"
+  version "4.2.0"f
   resolved "https://registry.yarnpkg.com/postcss-lab-function/-/postcss-lab-function-4.2.0.tgz#e054e662c6480202f5760887ec1ae0d153357123"
   integrity sha512-Zb1EO9DGYfa3CP8LhINHCcTTCTLI+R3t7AX2mKsDzdgVQ/GkCpHOTgOr6HBHslP7XDdVbqgHW5vvRPMdVANQ8w==
   dependencies:
