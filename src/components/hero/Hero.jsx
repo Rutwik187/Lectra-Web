@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { useState } from "react";
 
-import NumberCounter from "number-counter";
+import CountUp from "react-countup";
 
 const Hero = () => {
   const [menuOpened, SetMenuOpened] = useState(false);
@@ -55,19 +55,31 @@ const Hero = () => {
         <div className="hero-figures">
           <div>
             <span>
-              <NumberCounter end={140} start={100} delay={4} postFix="+" />
+              <CountUp
+                end={140}
+                start={100}
+                duration={5}
+                delay={0}
+                suffix="+"
+              />
             </span>
             <span>stores</span>
           </div>
           <div>
             <span>
-              <NumberCounter end={1000} start={950} delay={4} postFix="+" />
+              <CountUp
+                end={1000}
+                start={950}
+                duration={5}
+                delay={0}
+                suffix="+"
+              />
             </span>
             <span>Pre-orders</span>
           </div>
           <div>
             <span>
-              <NumberCounter end={50} start={10} delay={4} postFix="+" />
+              <CountUp end={50} start={10} duration={5} delay={0} suffix="+" />
             </span>
             <span>products</span>
           </div>
