@@ -76,6 +76,7 @@
   .left-team > :nth-child(2),
   .left-team > :nth-child(3) {
     font-size: large;
+    text-align: start;
   }
   .right-team {
     display: flex;
@@ -101,5 +102,8 @@
     display: block;
     bottom: 0;
     left: 0;
+  }
+  .arrows img {
+    margin: 2rem;
   }
 }
